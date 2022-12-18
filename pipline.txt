@@ -1,14 +1,18 @@
-pipeline 
-{                    
-    agent any                  
-    stages 
-    {
-     stage('print messages ')
-{
-steps{ 
- sh 'echo job-is-build'
- sh 'echo package-is-deployed'
-}
-}
+pipeline{
+agent any
+  stages{
+  stage('compiled-code'){
+  steps{
+   sh 'echo job-is-compiled-code'
+  }
+  stage('build the code'){
+  steps{
+  sh 'echo job-is-build'
+  }
+  
+  }
+    
+  }
+
 }
 }
