@@ -1,9 +1,13 @@
-pipeline {                    
+pipeline 
+{                    
     agent any                  
-    stages {
-     stage('print messages')
+    stages 
+    {
+     stage('print messages 
 {
-steps{ {sh 'echo job-is-build'}
-{
+steps{ 
+ {sh 'echo job-is-build'}
+ {sh 'echo package-is-deployed'}
+}
 }
 
