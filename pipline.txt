@@ -1,5 +1,5 @@
-pipeline {                     //declare always "pipeline" keyworld
-    agent (any)                  //where to run the job (any-> job will run on any available executor )
+pipeline {                    
+    agent any                  
     stages {
         stage('Stage-print-print-messgae') 
     {            steps {sh 'echo job-is-building'}
