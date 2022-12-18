@@ -1,9 +1,9 @@
 pipeline {                    
     agent any                  
     stages {
-        stage('Stage-print-print-messgae') 
-    {            steps {sh 'echo job-is-building'}
-                
-            
-        }
-		
+     stage{'print messages'}
+{
+steps{ {sh 'echo job-is-build'}
+{
+}
+
