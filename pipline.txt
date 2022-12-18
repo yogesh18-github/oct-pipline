@@ -3,7 +3,7 @@ pipeline
     agent any                  
     stages 
     {
-     stage('print messages 
+     stage('print messages ')
 {
 steps{ 
  {sh 'echo job-is-build'}
