@@ -6,8 +6,8 @@ pipeline
      stage('print messages ')
 {
 steps{ 
- {sh 'echo job-is-build'}
- {sh 'echo package-is-deployed'}
+ sh 'echo job-is-build'
+ sh 'echo package-is-deployed'
 }
 }
 
