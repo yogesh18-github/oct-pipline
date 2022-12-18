@@ -1,13 +1,14 @@
 pipeline{
 agent any
   stages{
-  stage('compiled-code'){
+  stage ('stage-print-frist-message'){
   steps{
-   sh 'echo job-is-compiled-code'
+   sh 'echo job-is-building-code'
   }
-  stage('build the code'){
+  
+  stage('stage-print-second-message'){
   steps{
-  sh 'echo job-is-build'
+  sh 'echo job-is-beployed'
   }
   
   }
